@@ -16,12 +16,12 @@ app.engine("hbs", engines.handlebars);
 app.set("views", "./views");
 app.set("view engine", "hbs");
 
-var indexController = require("./index.js");
-app.use("/index", indexController);
-var server = app.listen(port, function () {});
-// http
-//   .createServer(function (req, res) {
-//     res.writeHead(200, { "Content-Type": "text/html" });
-//     res.end("Hello World!");
-//   })
-//   .listen(port);
+// var indexController = require("./index.js");
+// app.use("/index", indexController);
+// var server = app.listen(port, function () {});
+http
+  .createServer(function (req, res) {
+    res.writeHead(200, { "Content-Type": "text/html" });
+    res.end("Hello World!");
+  })
+  .listen(port);
