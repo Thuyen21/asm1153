@@ -1,0 +1,20 @@
+{
+  "name": "asm1153",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thuyen21/asm1153.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Thuyen21/asm1153/issues"
+  },
+  "homepage": "https://github.com/Thuyen21/asm1153#readme",
+  "description": ""
+}
