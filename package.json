@@ -16,5 +16,12 @@
     "url": "https://github.com/Thuyen21/asm1153/issues"
   },
   "homepage": "https://github.com/Thuyen21/asm1153#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "consolidate": "^0.15.1",
+    "express": "^4.17.1",
+    "handlebars": "^4.7.6",
+    "path": "^0.12.7"
+  }
 }
