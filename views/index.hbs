@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/mystyle.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <ul>
+                <li><a class="active" href="/index">Home</a></li>
+                <li class="dropdown"><a href="index.php?CatId=1" class="dropbtn">Samsung</a>
+                    <div class="dropdown-content">
+                        <a href="#">Galaxy A</a>
+                        <a href="#">Galaxy Fold</a>
+                        <a href="#">Galaxy S</a>
+                        <a href="#">Galaxy Note</a>
+                    </div>
+                </li>
+                <li style="float: right;">
+                    <a href="register.php">Regsiter</a>
+                </li>
+                <li style="float: right;">
+                    <a href="/login">Login</a>
+                </li>
+        </div>
+        <div style="padding:20px;margin-top:30px;"></div>
+        <div class="left">
+            <div class="quickslink">
+                <div style="background-color:#CDCFDF">Search by name</div><br>
+                <form action="">
+                    <input style="width: 90%;" type="text" name="search">
+                    <input type="submit" value="Search" name="submitsearch" style="max-width: 100%;">
+                    <input type="hidden" value="search" name="CatId">
+                </form>
+
+            </div>
+        </div>
+        <div class="main">
+            {{#each product}}
+            <a href="#">
+                <div class="box">
+
+                    <div class="center">
+                        <img class="boximg" width="150" height="150" src="{{Image}}" alt="">
+                    </div>
+                    <div>
+                        <h3>{{ProductName}}</h3>
+                    </div>
+                    <div class="price">
+                        <strong>{{Price}}$</strong>
+                        <span class="price">{{oldprice}}$</span>
+                    </div>
+
+                    <figure class="bginfo">
+                        {{Note}}
+                    </figure>
+                </div>
+            </a>
+            {{/each}}
+        </div>
+        <div class="right"></div>
+    </div>
+</body>
+
+</html>
