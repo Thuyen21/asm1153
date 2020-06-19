@@ -17,11 +17,12 @@ app.set("views", "./views");
 app.set("view engine", "hbs");
 
 var indexController = require("./index.js");
-app.use("/index", indexController);
-// var server = app.listen(port, function () {});
-http
-  .createServer(function (req, res) {
-    var fullUrl = req.protocol + "://" + req.get("host") + "/index";
-    res.redirect(fullUrl);
-  })
-  .listen(port);
+app.use("/", indexController);
+var server = app.listen(port, function () {});
+
+// http
+//   .createServer(function (req, res) {
+//     var fullUrl = req.protocol + "://" + req.get("host") + "/index";
+//     res.redirect(fullUrl);
+//   })
+//   .listen(port);
