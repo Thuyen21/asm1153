@@ -19,6 +19,9 @@ app.set("view engine", "hbs");
 var indexController = require("./index.js");
 app.use("/", indexController);
 
+var indexController = require("./index.js");
+app.use("/index", indexController);
+
 var loginController = require("./login.js");
 app.use("/login", loginController);
 
@@ -26,10 +29,3 @@ var productController = require("./product.js");
 app.use("/product", productController);
 
 var server = app.listen(port, function () {});
-
-// http
-//   .createServer(function (req, res) {
-//     var fullUrl = req.protocol + "://" + req.get("host") + "/index";
-//     res.redirect(fullUrl);
-//   })
-//   .listen(port);
