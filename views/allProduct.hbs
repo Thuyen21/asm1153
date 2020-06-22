@@ -27,7 +27,9 @@
                     <td>Price</td>
                     <td>Note</td>
                     <td>Old Price</td>
+                    <td>Color</td>
                     <td>Delete</td>
+
 
                 </tr>
                 {{#each product}}
@@ -39,7 +41,7 @@
                     <td><input type="text" name="price" value="{{Price}}"></td>
                     <td><input type="text" name="pnote" value="{{Note}}"></td>
                     <td><input type="text" name="oldPrime" value="{{oldprice}}"></td>
-
+                    <td><input type="text" name="color" value="{{Color}}"></td>
                     <td><a href="/product/delete?id={{_id}}">Delete</a></Td>
                 </tr>
                 {{/each}}
