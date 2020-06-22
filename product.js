@@ -18,7 +18,7 @@ router.get("/insert", (req, res) => {
 router.get("/delete", async (req, res) => {
   let id = req.query.id;
   var ObjectID = require("mongodb").ObjectID;
-  let condition = { ProductId: "A80" };
+  let condition = { _id: ObjectID(id) };
   let client = await MongoClient.connect(url);
   let dbo = client.db("storeman");
   await dbo.collection("product").deleteOne(condition);
