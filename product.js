@@ -35,12 +35,14 @@ router.post("/doInsert", async (req, res) => {
   let id = req.body.id;
   let img = req.body.img;
   let note = req.body.note;
+  let color = req.body.color;
   let newProduct = {
     ProductId: id,
     ProductName: name,
     Image: img,
     Price: price,
     Note: note,
+    Color: color,
   };
   await dbo.collection("product").insertOne(newProduct);
 
