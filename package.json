@@ -21,7 +21,7 @@
     "body-parser": "^1.19.0",
     "consolidate": "^0.15.1",
     "express": "^4.17.1",
-    "handlebars": "^4.7.6",
+    "handlebars": "^4.7.7",
     "heroku": "^7.42.1",
     "mongodb": "^3.5.9",
     "path": "^0.12.7"
